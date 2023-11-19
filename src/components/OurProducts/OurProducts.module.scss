@@ -1,0 +1,47 @@
+@import "../../styles/common";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.products {
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width:1150px;
+    margin: 0px auto;
+    padding: 0;
+    height: 100%;
+    
+}
+
+.name {
+    font-size: 14px;
+    margin: .5rem 0;
+}
+
+.contents {
+    margin-bottom: 1rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+.navList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+
+    li {
+        margin-bottom: 1rem;
+        img {
+            width: 100%;
+            border-radius: .2rem;
+        }
+    }
+}

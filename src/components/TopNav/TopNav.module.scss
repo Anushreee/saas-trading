@@ -1,0 +1,49 @@
+@import "../../styles/common";
+
+
+.topNav {
+    background:  rgb(65, 84, 164);
+    height: 150px;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width:1150px;
+    margin: 0px auto;
+    height: 100%;
+}
+
+.contents {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .logo {
+        margin-right: 2rem;
+        img {
+            max-width: 150px;
+        }
+    }
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style-type: none;
+    
+
+    li {
+        a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        
+    }
+
+
+}

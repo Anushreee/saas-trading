@@ -1,0 +1,28 @@
+@import "../../styles/common";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width:1150px;
+    margin: 0px auto;
+    padding: 1rem 0 0;
+    height: 100%;
+    
+}
+
+.contents {
+    margin-bottom: 1rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,60 @@
+@import "../../styles/common";
+
+
+.contactNav {
+    background:  #EDEFEC;
+    height: 50px;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width:1150px;
+    margin: 0px auto;
+    height: 100%;
+}
+
+.contents {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    list-style-type: none;
+    width: 100%;
+    
+    
+
+    li {
+        
+            color: #54595F;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 0 1rem;
+        
+        .phone {
+            margin-right: .5rem;
+            position: relative;
+            bottom: -2px;
+            color: black;
+        }
+
+        .envelope {
+            margin-right: .5rem;
+            position: relative;
+            bottom: -4px;
+            color: black;
+            font-size: 1rem;
+        }
+    }
+
+
+}

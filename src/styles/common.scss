@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'functions';
+
+
+body, html {
+    font-family: 'Roboto','Helvetica','Arial',sans-serif !important;
+    font-size: px-to-rem(16);
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opaque background */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+    pointer-events: auto;
+}
+
+.separator {
+    margin: 0;
+    color: #9d9c9c;
+  }
+
+h1, h2 {
+    color: rgb(48, 72, 165);
+    margin: 2rem 0;
+}
+
+
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 71rem; //1136px
+    }
+}
