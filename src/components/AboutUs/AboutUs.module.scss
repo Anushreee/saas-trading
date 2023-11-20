@@ -1,5 +1,10 @@
 @import "../../styles/common";
 
+@font-face {
+    font-family: 'Poppins';
+    src:url('../../assets/fonts/Poppins/Poppins-Medium.ttf') format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,9 +32,19 @@
 
     p {
         margin-bottom: 2rem;
+        color: #666;
+        font-size: 1rem;
+        font-family: Poppins,Arial,Helvetica,sans-serif
     }
 }
 
-h1, h2 {
+.contentWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5rem;
+}
+
+h1, h2, h3 {
     margin-bottom: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }

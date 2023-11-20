@@ -28,8 +28,17 @@
     margin-bottom: 1rem;
 }
 
+.contentWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 7rem;
+
+    img {
+        border-radius: 1%;
+    }
+}
+
 h1, h2 {
-    margin-bottom: 1rem;
 }
 
 .navList {

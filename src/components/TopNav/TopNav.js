@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./TopNav.module.scss";
-import Logo from "../../assets/logo.png";
+import Logo from "../../assets/logo1.png";
 
 const TopNav = () => {
   return (
@@ -9,7 +9,7 @@ const TopNav = () => {
       <div className={styles.wrapper}>
         <div className={styles.contents}>
           <div className={styles.logo}>
-            <img src={Logo} />
+            <img src={Logo} alt="SAAS Logo"/>
           </div>
           <ul className={styles.navList}>
             <li>
