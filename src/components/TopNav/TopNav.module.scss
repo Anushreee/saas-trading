@@ -52,7 +52,55 @@
 }
 
 @media(max-width:768px) {
+
+    .contents {
+        position:relative;
+    }
+
+    .closeButton {
+        position:absolute;
+        top:10px;
+        right:10px;
+        border: none;
+        font-size: 60px;
+        background: none;
+    }
     .topNav {
-        display: none;
+        //display: none;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        right:0;
+        width: 95%;
+        height: 100%;
+        animation: slideIn 0.3s forwards;
+        //background: green;
+
+       
+
+        .logo {
+            display: none;
+        }
+
+        .navList {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+            margin-top: 15rem;
+            
+
+            li {
+                border-bottom: 1px solid grey;
+                //background: green;
+                width:100%;
+                a {
+                    display: block;
+                    padding: 1rem 0;
+                    width: 100%;
+                }
+            }
+        }
+        
     }
 }

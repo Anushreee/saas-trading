@@ -1,19 +1,20 @@
-import logo from './logo.svg';
+import logo from "./logo.svg";
+import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import AboutUs from './components/AboutUs/AboutUs';
-import TopNav from './components/TopNav/TopNav';
-import ContactNav from './components/ContactNav/ContactNav';
-import OurProducts from './components/OurProducts/OurProducts';
-import ContactUs from './components/ContactUs/ContactUs';
-import Home from './components/Home/Home';
-import './App.css';
-
+import AboutUs from "./components/AboutUs/AboutUs";
+import TopNav from "./components/TopNav/TopNav";
+import ContactNav from "./components/ContactNav/ContactNav";
+import OurProducts from "./components/OurProducts/OurProducts";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Home from "./components/Home/Home";
+import "./App.css";
 
 function App() {
+  const [displayTopNav, setDisplayTopNav] = useState(false);
   return (
     <Router>
-      <ContactNav />
-      <TopNav />
+      <ContactNav setDisplayTopNav={setDisplayTopNav} />
+      {displayTopNav && <TopNav setDisplayTopNav={setDisplayTopNav}/>}
       <Routes>
         <Route path="/about" element={<AboutUs />} />
         <Route path="/products" element={<OurProducts />} />
