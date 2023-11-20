@@ -11,13 +11,7 @@
     padding: 0;
 }
 
-.wrapper {
-    max-width:1150px;
-    margin: 0px auto;
-    padding: 0;
-    height: 100%;
-    
-}
+
 
 .name {
     font-size: 14px;
@@ -52,5 +46,33 @@ h1, h2 {
             width: 100%;
             border-radius: .2rem;
         }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contentWrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      .textWrapper {
+        order: 2;
+      }
+  
+      .imageWrapper {
+        max-width: 100%;
+        overflow: hidden;
+        order: 1;
+        
+  
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .navList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }

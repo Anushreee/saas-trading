@@ -6,7 +6,7 @@ const Home = () => {
     <div className={styles.home}>
       <div className={styles.wrapper}>
         <h1>Saas Trading Pty Ltd</h1>
-        <div className={styles.contents}>
+        <div className={styles.contentWrapper}>
           <p>
             At SAAB Trading Enterprises Pty Limited, we are committed to
             delivering premium products to the Australian market and beyond. We

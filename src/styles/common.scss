@@ -17,19 +17,6 @@ a {
     text-decoration: none;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Opaque background */
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 999;
-    pointer-events: auto;
-}
 
 .separator {
     margin: 0;
@@ -45,10 +32,11 @@ h2 {
     margin: 0 0 2rem;
 }
 
+.wrapper {
+    max-width: 1150px;
+    margin: 0px auto;
+    height: 100%;
+    padding: 0 1.2rem;
+ }
 
 
-@media(min-width: 768px) {
-    .container {
-        max-width: 71rem; //1136px
-    }
-}

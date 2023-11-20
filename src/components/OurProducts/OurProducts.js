@@ -81,7 +81,7 @@ const OurProducts = () => {
       <div className={styles.wrapper}>
         <h1>Our Products</h1>
         <div className={styles.contentWrapper}>
-          <div>
+          <div className={styles.textWrapper}>
             <h2>Introducing 0ur Flagship Product: Nepalese Black Cardamom</h2>
             <p>
               We are proud to introduce our flagship product, the exquisite
@@ -147,7 +147,7 @@ const OurProducts = () => {
               customers.
             </p>
           </div>
-          <div>
+          <div className={styles.imageWrapper}>
             <img src={Cardamom} />
           </div>
         </div>

@@ -14,12 +14,11 @@
 .wrapper {
     max-width:1150px;
     margin: 0px auto;
-    padding: 1rem 0 0;
     height: 100%;
-    
+    padding: 0 1.2rem;
 }
 
-.contents {
+.contentWrapper {
     margin-bottom: 1rem;
 }
 
@@ -36,3 +35,4 @@ h1, h2 {
     margin-bottom: 2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+

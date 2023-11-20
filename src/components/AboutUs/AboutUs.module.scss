@@ -1,50 +1,80 @@
 @import "../../styles/common";
 
 @font-face {
-    font-family: 'Poppins';
-    src:url('../../assets/fonts/Poppins/Poppins-Medium.ttf') format('opentype');
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf") format("opentype");
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .about {
-    width:100%;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.wrapper {
-    max-width:1150px;
-    margin: 0px auto;
-    padding: 1rem 0 0;
-    height: 100%;
-    
-}
+
 
 .content {
-    margin-bottom: 1rem;
-    color: rgb(69, 68, 68);
-    font-size: 1rem;
-    line-height: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(69, 68, 68);
+  font-size: 1rem;
+  line-height: 1.5rem;
 
-    p {
-        margin-bottom: 2rem;
-        color: #666;
-        font-size: 1rem;
-        font-family: Poppins,Arial,Helvetica,sans-serif
-    }
+  p {
+    margin-bottom: 2rem;
+    color: #666;
+    font-size: 1rem;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .contentWrapper {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 5rem;
+
+  .textWrapper {
+    order: 1;
+  }
+
+  .imageWrapper {
+    order: 2;
+  }
 }
 
-h1, h2, h3 {
-    margin-bottom: 1rem;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .contentWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    .textWrapper {
+      order: 2;
+    }
+
+    .imageWrapper {
+      max-width: 100%;
+      overflow: hidden;
+      order: 1;
+      
+
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

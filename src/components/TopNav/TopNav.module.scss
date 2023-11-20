@@ -50,3 +50,9 @@
 
 
 }
+
+@media(max-width:768px) {
+    .topNav {
+        display: none;
+    }
+}
