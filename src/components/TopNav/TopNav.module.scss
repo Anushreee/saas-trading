@@ -60,10 +60,11 @@
     .closeButton {
         position:absolute;
         top:10px;
-        right:10px;
+        right:15px;
         border: none;
         font-size: 60px;
         background: none;
+        color:rgb(48, 72, 165);
     }
     .topNav {
         //display: none;
@@ -74,9 +75,18 @@
         width: 95%;
         height: 100%;
         animation: slideIn 0.3s forwards;
+        border-top-left-radius: 20px;
+        box-shadow: -1px 0px 1px 0px #eee;
         //background: green;
 
-       
+        @keyframes slideIn {
+            from {
+              transform: translateX(100%);
+            }
+            to {
+              transform: translateX(0);
+            }
+          }
 
         .logo {
             display: none;
@@ -91,7 +101,7 @@
             
 
             li {
-                border-bottom: 1px solid grey;
+                border-bottom: 1px solid #eee;
                 //background: green;
                 width:100%;
                 a {
