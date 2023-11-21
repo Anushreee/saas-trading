@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./TopNav.module.scss";
 import Logo from "../../assets/logo1.png";
+import useDeviceType from "../../hooks/useDeviceType";
+import { DEVICE_TYPE } from "../../utils/constants";
 
-const TopNav = ({ setDisplayTopNav }) => {
-  //const [opened, setIsOpened] = useState(false);
+const TopNav = ({ setDisplayTopNav = () => {} }) => {
+  const deviceType = useDeviceType();
   return (
     <div className={styles.topNav}>
       <div className={styles.wrapper}>
@@ -12,14 +14,17 @@ const TopNav = ({ setDisplayTopNav }) => {
           <div className={styles.logo}>
             <img src={Logo} alt="SAAS Logo" />
           </div>
-          <button
-            className={styles.closeButton}
-            onClick={() => {
-              setDisplayTopNav(false);
-            }}
-          >
-            &times;
-          </button>
+          {deviceType === DEVICE_TYPE.MOBILE && (
+            <button
+              className={styles.closeButton}
+              onClick={() => {
+                setDisplayTopNav(false);
+              }}
+            >
+              &times;
+            </button>
+          )}
+
           <ul
             className={styles.navList}
             onClick={() => {
